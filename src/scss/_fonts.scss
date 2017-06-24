@@ -1,0 +1,147 @@
+$sans-serif: "proxima-nova", sans-serif;
+$sans-serif--loaded: "proxima-nova", sans-serif;
+
+@mixin font($font-size, $line-height, $weight: 400, $style: normal) {
+  display: block;
+  font-family: $sans-serif;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $weight;
+  font-style: $style;
+
+  // TODO -- do something here, to cache fonts / use cookie?
+  .js-font-loaded & {
+    font-family: $sans-serif--loaded;
+  }
+}
+
+@mixin baseline($top) {
+  $t: $top;
+  $b: 0 - $t;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    margin-top: $t;
+  }
+
+  &::after {
+    margin-bottom: $b;
+  }
+}
+
+@mixin f-h1 {
+  letter-spacing: -0.02em;
+
+  @include breakpoint("xsmall") {
+    @include font(30px, 30px, 700);
+    @include baseline(1px);
+  }
+
+  @include breakpoint("small-to-large") {
+    @include font(45px, 45px, 700);
+    @include baseline(-1px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(60px, 60px, 700);
+    @include baseline(1px);
+  }
+}
+
+.f-h1 {
+  @include f-h1;
+}
+
+@mixin f-sub {
+  letter-spacing: -0.02em;
+
+  @include breakpoint("xsmall") {
+    @include font(16px, 20px);
+  }
+
+  @include breakpoint("small-to-large") {
+    @include font(24px, 30px, 100);
+    @include baseline(-2px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(30px, 35px, 100);
+    @include baseline(-2px);
+  }
+}
+
+.f-sub {
+  @include f-sub;
+}
+
+@mixin f-body {
+  @include font(16px, 25px);
+  @include baseline(-2px);
+}
+
+.f-body {
+  @include f-body;
+}
+
+@mixin f-logo {
+  @include breakpoint("large-") {
+    @include font(16px, 25px, 700);
+    @include baseline(-2px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(20px, 20px, 700);
+    @include baseline(-1px);
+  }
+}
+
+.f-logo {
+  @include f-logo;
+}
+
+@mixin f-btn {
+  letter-spacing: 0.02em;
+
+  @include breakpoint("large-") {
+    @include font(16px, 25px);
+    @include baseline(-2px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(20px, 25px);
+    @include baseline(2px);
+  }
+}
+
+.f-btn {
+  @include f-btn;
+}
+
+@mixin f-aux {
+  @include font(14px, 20px);
+  @include baseline(1px);
+}
+
+.f-aux {
+  @include f-aux;
+}
+
+@mixin f-nav {
+  @include breakpoint("large-") {
+    @include font(16px, 20px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(18px, 20px);
+    @include baseline(-1px);
+  }
+}
+
+.f-nav {
+  @include f-nav;
+}

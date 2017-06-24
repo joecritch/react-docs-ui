@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  // align-items: center;
+  color: #61dafb;
+
+  img {
+    position: relative;
+    // top: 2px;
+
+    @include breakpoint("xlarge+") {
+      height: 30px;
+      top: -1px;
+    }
+  }
+}
+
+.logo__title {
+  @include f-logo;
+  margin-left: 10px;
+
+  @include breakpoint("small-") {
+    visibility: hidden;
+  }
+
+  @include breakpoint("xlarge+") {
+    padding-top: 5px;
+  }
+}

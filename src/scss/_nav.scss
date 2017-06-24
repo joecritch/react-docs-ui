@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  margin-left: -20px;
+
+  // @include breakpoint("medium-to-large") {
+    // margin-left: -30px;
+  // }
+
+  @include breakpoint("xlarge+") {
+    margin-left: -30px;
+  }
+}
+
+.nav__item {
+  padding-left: 20px;
+
+  // @include breakpoint("medium-to-large") {
+    // padding-left: 30px;
+  // }
+
+  @include breakpoint("xlarge+") {
+    padding-left: 20px;
+  }
+}
+
+.nav__link {
+  @include f-nav;
+  color: rgba(#fff, 0.5);
+
+  @include breakpoint("small+") {
+    color: #fff;
+  }
+
+  @include breakpoint("xlarge+") {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &:hover {
+      opacity: 0.5; // TODO implement actual hover
+    }
+  }
+}

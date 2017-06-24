@@ -1,0 +1,18 @@
+.primary_btn {
+  background-color: #61dafb;
+  color: #000;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 100;
+  padding: 10px 25px 5px;
+  white-space: nowrap;
+
+  @include breakpoint("xlarge+") {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+.primary_btn__inner {
+  @include f-btn;
+}

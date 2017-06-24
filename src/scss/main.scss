@@ -1,0 +1,34 @@
+@import "setup/variables";
+@import "setup/mixins";
+@import "setup/breakpoint";
+@import "setup/reset";
+@import "setup/grid_helpers";
+
+// Font modules are included as mixins
+// ... we keep them separate to isolate the baseline's magic numbers
+@import "fonts";
+
+// BEM blocks *should* be source-order agnostic
+// so let's go alphabetical
+@import "aux_list";
+@import "header";
+@import "hero";
+@import "nav";
+@import "primary_btn";
+@import "wrapper";
+
+html {
+  min-width: 320px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: 'proxima-nova', sans-serif;
+}
+
+// This could be useful to avoid collapsing margins when stacking different fonts
+.block {
+  display: flex;
+  flex-direction: column;
+}

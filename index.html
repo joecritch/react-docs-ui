@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>⚛ React Docs UI</title>
+  <link rel="stylesheet" href="/dist/css/main.css" />
+  <script>
+  (function(d) {
+    var config = {
+      kitId: 'xnt6blw',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+  </script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__inner">
+        <div class="header__logo">
+          <a href="/" class="logo">
+            <img src="/logo.svg" alt="React" height="20" />
+            <span class="logo__title">React</span>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <div class="header__nav_mid">
+            <div class="header__nav_inner">
+              <ul class="nav">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Docs</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Tutorial</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Community</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <form class="header__search">
+          <label for="search">
+            <img src="/search.svg" alt="Search" height="16" />
+          </label>
+          <div class="header__search_input">
+            <input class="header__search_input_inner" type="search" placeholder="Search docs" />
+          </div>
+        </form>
+        <div class="header__aux">
+          <ul class="aux_list">
+            <li class="aux_list__item">
+              <a class="aux_list__link aux_list__btn" href="#" class="aux_btn">
+                v15.5.4
+              </a>
+            </li>
+            <li class="aux_list__item">
+              <a class="aux_list__link" href="#">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="hero">
+    <div class="wrapper">
+      <h1 class="hero__title">React</h1>
+      <p class="hero__subtitle">A JavaScript library for building user interfaces</p>
+      <div class="hero__cta_group">
+        <div class="hero__cta">
+          <a href="#" class="primary_btn">
+            <span class="primary_btn__inner">Get Started</span>
+          </a>
+        </div>
+        <div class="hero__cta hero__link_cta">
+          <a href="#" class="hero__link">
+            Take the tutorial
+            <img src="/arrow.svg" alt="Search" height="12" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <span class="design-grid-toggle design-grid-toggle--baseline" onClick="this.nextElementSibling.classList.toggle('js-hide');">Toggle baseline grid</span>
+  <span class="design-grid design-grid--baseline js-hide"></span>
+  <span class="design-grid-toggle design-grid-toggle--columns" data-env="Development" onClick="this.nextElementSibling.classList.toggle('js-hide');">Toggle columns grid</span>
+  <span class="design-grid design-grid--columns js-hide">
+    <div class="wrapper">
+      <div class="grid">
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+      </div>
+    </div>
+  </span>
+
+</body>
+</html>
