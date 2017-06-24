@@ -27,3 +27,4 @@ A new UI for the React docs site. This is just a static build, using a _very_ si
 - [ ] Choose a free icon set / create icons from scratch
 - [ ] SVG sprite (once we know the final build target, e.g. Jekyll / Gatsby)
 - [ ] Better alignment techniques for icons (use 5px grid?)
+- [ ] Probably lots more I can't think of :)

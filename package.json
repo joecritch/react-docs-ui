@@ -7,7 +7,8 @@
     "sass": "node-sass src/scss/ -o dist/css/ --recursive --source-map true",
     "watch:sass": "node-sass src/scss/ -o dist/css/ --watch --recursive --source-map true",
     "server": "http-server -p 8081",
-    "start": "npm-run-all server watch:sass"
+    "start": "npm-run-all server watch:sass",
+    "build": "npm-run-all sass"
   },
   "devDependencies": {
     "http-server": "^0.10.0",
