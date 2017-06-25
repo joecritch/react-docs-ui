@@ -1,7 +1,7 @@
 .home_tabs {
   padding-top: 35px;
   padding-bottom: 35px;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $c-divider;
 
   @include breakpoint("medium+") {
     text-align: center;
@@ -47,13 +47,13 @@
 
 .home_tabs__link {
   @include f-tab;
-  color: rgba(#1a1a1a, 0.46);
+  color: rgba($c-text, 0.46);
   transition: color 0.2s ease-out;
   position: relative;
 
   &.is-current,
   &:hover {
-    color: #1a1a1a;
+    color: $c-text;
   }
 
   &.is-current::after {
@@ -63,13 +63,13 @@
     bottom: -8px;
     left: 0;
     height: 3px;
-    background: #61dafb;
+    background: $c-brand;
   }
 }
 
 .home_tabs__panel {
   @include f-panel;
-  color: #777777;
+  color: $c-subtle;
   padding-top: 10px;
 
   @include breakpoint("medium+") {

@@ -1,6 +1,7 @@
 .cta_link {
   @include f-btn;
-  color: #61dafb;
+  display: inline-block !important;
+  color: $c-brand;
   padding-top: 10px;
   transition: color 0.2s ease-out;
 

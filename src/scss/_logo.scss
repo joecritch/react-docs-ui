@@ -1,11 +1,9 @@
 .logo {
   display: flex;
-  // align-items: center;
-  color: #61dafb;
+  color: $c-brand;
 
   img {
     position: relative;
-    // top: 2px;
 
     @include breakpoint("xlarge+") {
       height: 30px;

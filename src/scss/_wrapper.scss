@@ -8,10 +8,6 @@
     width: 90%;
   }
 
-  @include breakpoint("large+") {
-    // width: 80%;
-  }
-
   @include breakpoint("xxlarge") {
     max-width: 1220px;
   }

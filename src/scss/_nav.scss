@@ -28,12 +28,12 @@
     padding-bottom: 20px;
 
     &:hover {
-      color: #61dafb;
+      color: $c-brand;
     }
   }
 
   &.is-current {
-    color: #61dafb;
+    color: $c-brand;
 
     @include breakpoint("xlarge+") {
       margin-left: -10px;
@@ -47,7 +47,7 @@
         position: absolute;
         bottom: -2px;
         height: 4px;
-        background: #61dafb;
+        background: $c-brand;
         left: 0;
         right: 0;
         z-index: 1;

@@ -1,3 +1,10 @@
+$c-dark: #282c34; // dark blue
+$c-darker: #20232a; // really dark blue
+$c-brand: #61dafb; // electric blue
+$c-text: #1a1a1a;
+$c-subtle: #777;
+$c-divider: #ececec;
+
 $breakpoints: (
   xsmall: (start: nil, end: 599),
   small: (start: 600, end: 739),
