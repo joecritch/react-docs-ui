@@ -25,3 +25,8 @@ ul, ol {
 html:not([data-whatinput="keyboard"]) * {
   outline: 0;
 }
+
+img {
+  display: inline-block;
+  vertical-align: top;
+}

@@ -197,3 +197,14 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 .f-panel {
   @include f-panel;
 }
+
+@mixin f-note {
+  @include font(14px, 15px, 700);
+  @include baseline(-2px);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.f-note {
+  @include f-note;
+}
