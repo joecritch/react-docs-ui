@@ -57,6 +57,21 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
   @include f-h1;
 }
 
+@mixin f-h2 {
+  @include breakpoint("large-") {
+    @include font(20px, 25px, 700);
+    @include baseline(2px);
+  }
+  @include breakpoint("xlarge+") {
+    @include font(25px, 30px, 700);
+    @include baseline(2px);
+  }
+}
+
+.f-h2 {
+  @include f-h2;
+}
+
 @mixin f-sub {
   letter-spacing: -0.02em;
 
@@ -66,7 +81,7 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 
   @include breakpoint("small-to-large") {
     @include font(24px, 30px, 100);
-    @include baseline(-2px);
+    @include baseline(-  2px);
   }
 
   @include breakpoint("xlarge+") {
@@ -80,8 +95,15 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 }
 
 @mixin f-body {
-  @include font(16px, 25px);
-  @include baseline(-2px);
+  @include breakpoint("small-") {
+    @include font(16px, 25px);
+    @include baseline(-2px);
+  }
+
+  @include breakpoint("medium+") {
+    @include font(16px, 30px);
+    @include baseline(0px);
+  }
 }
 
 .f-body {

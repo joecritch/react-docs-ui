@@ -13,6 +13,7 @@
 @import "aux_list";
 @import "header";
 @import "hero";
+@import "home_example";
 @import "home_tabs";
 @import "logo";
 @import "nav";
@@ -33,4 +34,9 @@ body {
 .block {
   display: flex;
   flex-direction: column;
+}
+
+// TODO -- standardize bottom padding across layouts?
+.home {
+  padding-bottom: 120px;
 }
