@@ -74,25 +74,48 @@
     </div>
   </header>
 
-  <header class="hero">
-    <div class="wrapper">
-      <h1 class="hero__title">React</h1>
-      <p class="hero__subtitle">A JavaScript library for building user interfaces</p>
-      <div class="hero__cta_group">
-        <div class="hero__cta">
-          <a href="#" class="primary_btn">
-            <span class="primary_btn__inner">Get Started</span>
-          </a>
-        </div>
-        <div class="hero__cta hero__link_cta">
-          <a href="#" class="hero__link">
-            Take the tutorial
-            <img src="/arrow.svg" alt="Search" height="12" />
-          </a>
+  <main>
+
+    <header class="hero">
+      <div class="wrapper">
+        <h1 class="hero__title">React</h1>
+        <p class="hero__subtitle">A JavaScript library for building user interfaces</p>
+        <div class="hero__cta_group">
+          <div class="hero__cta">
+            <a href="#" class="primary_btn">
+              <span class="primary_btn__inner">Get Started</span>
+            </a>
+          </div>
+          <div class="hero__cta hero__link_cta">
+            <a href="#" class="hero__link">
+              Take the tutorial
+              <img src="/arrow.svg" alt="Search" height="12" />
+            </a>
+          </div>
         </div>
       </div>
+    </header>
+
+    <div class="wrapper">
+
+      <section class="home_tabs">
+        <ul class="home_tabs__list">
+          <li class="home_tabs__item"><a href="#" class="home_tabs__link is-current">Declarative</a></li>
+          <li class="home_tabs__item"><a href="#" class="home_tabs__link">Component-based</a></li>
+          <li class="home_tabs__item"><a href="#" class="home_tabs__link">Learn once, write anywhere</a></li>
+        </ul>
+        <section class="home_tabs__panel">
+          <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes. Declarative views make your code more predictable and easier to debug.</p>
+        </section>
+      </section>
+
     </div>
-  </header>
+
+  </main>
+
+  <footer>
+
+  </footer>
 
   <span class="design-grid-toggle design-grid-toggle--baseline" onClick="this.nextElementSibling.classList.toggle('js-hide');">Toggle baseline grid</span>
   <span class="design-grid design-grid--baseline js-hide"></span>

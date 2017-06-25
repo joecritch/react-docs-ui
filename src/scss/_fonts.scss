@@ -113,7 +113,7 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
   }
 
   @include breakpoint("xlarge+") {
-    @include font(20px, 25px);
+    @include font(20px, 25px, 300);
     @include baseline(2px);
   }
 }
@@ -144,4 +144,34 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 
 .f-nav {
   @include f-nav;
+}
+
+@mixin f-tab {
+  @include breakpoint("large-") {
+    @include font(18px, 20px);
+    @include baseline(-1px);
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(24px, 25px, 300);
+  }
+}
+
+.f-tab {
+  @include f-tab;
+}
+
+@mixin f-panel {
+  @include breakpoint("large-") {
+    @include f-body;
+  }
+
+  @include breakpoint("xlarge+") {
+    @include font(18px, 35px);
+    @include baseline(2px);
+  }
+}
+
+.f-panel {
+  @include f-panel;
 }
