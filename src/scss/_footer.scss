@@ -15,12 +15,20 @@
   margin-top: -40px;
   display: flex;
   flex-wrap: wrap;
+
+  @include breakpoint("xlarge+") {
+    margin-left: -40px;
+  }
 }
 
 .footer__category,
 .footer__logo {
   padding-left: 20px;
   padding-top: 40px;
+
+  @include breakpoint("xlarge+") {
+    padding-left: 40px;
+  }
 }
 
 .footer__category {
