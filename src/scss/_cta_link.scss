@@ -1,0 +1,10 @@
+.cta_link {
+  @include f-btn;
+  color: #61dafb;
+  padding-top: 10px;
+
+  img {
+    margin-left: 4px;
+    vertical-align: -1px;
+  }
+}
