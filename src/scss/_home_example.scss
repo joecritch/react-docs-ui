@@ -2,13 +2,13 @@
   padding-top: 40px;
 
   @include breakpoint("medium+") {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 
   @include breakpoint("xlarge+") {
     display: flex;
     margin-left: -40px;
-    padding-top: 120px;
+    padding-top: 80px;
   }
 }
 

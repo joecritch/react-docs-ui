@@ -61,19 +61,20 @@
 }
 
 .header__nav_mid {
-  margin-right: -20px;
   position: relative;
   align-self: stretch;
-  -webkit-mask-image: linear-gradient(to right, rgba(#000, 0), rgba(#000, 1) 20px, rgba(#000, 1) 90%, rgba(#000, 0));
   margin-left: -20px;
+  margin-right: -20px;
+
+  @include breakpoint("small-") {
+    -webkit-mask-image: linear-gradient(to right, rgba(#000, 0), rgba(#000, 1) 20px, rgba(#000, 1) 90%, rgba(#000, 0));
+  }
 }
 
 .header__nav_inner {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  // height: 40px;
   display: flex;
-  // align-items: center;
 
   @include breakpoint("small-to-large") {
     // height: 50px;

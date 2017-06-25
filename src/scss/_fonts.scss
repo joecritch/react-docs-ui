@@ -155,7 +155,7 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 
 @mixin f-nav {
   @include breakpoint("large-") {
-    @include font(16px, 20px);
+    @include font(16px, 20px, 300);
   }
 
   @include breakpoint("xlarge+") {

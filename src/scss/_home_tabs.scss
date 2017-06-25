@@ -1,5 +1,7 @@
 .home_tabs {
   padding-top: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #ececec;
 
   @include breakpoint("medium+") {
     text-align: center;
@@ -8,6 +10,7 @@
 
   @include breakpoint("xlarge+") {
     padding-top: 70px;
+    padding-bottom: 70px;
   }
 }
 
@@ -57,9 +60,9 @@
     content: '';
     position: absolute;
     width: 100%;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
-    height: 1px;
+    height: 3px;
     background: #61dafb;
   }
 }
