@@ -51,11 +51,7 @@
 }
 
 .header__nav {
-  width: calc(4 / 6 * 100%);
-
-  @include breakpoint("medium-to-large") {
-    width: calc(3 / 6 * 100%);
-  }
+  width: calc(3 / 6 * 100%);
 
   @include breakpoint("xlarge+") {
     width: calc(2 / 6 * 100%);;

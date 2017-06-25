@@ -6,12 +6,12 @@
   padding-bottom: 20px;
 
   @include breakpoint("small+") {
-    padding-top: calc(60px + 70px);
+    padding-top: calc(60px + 50px);
     padding-bottom: 70px;
   }
 
   @include breakpoint("xlarge+") {
-    padding-top: calc(60px + 90px);
+    padding-top: calc(60px + 95px);
     padding-bottom: 85px;
   }
 }
@@ -34,7 +34,7 @@
   }
 
   @include breakpoint("xlarge+") {
-    padding-top: 25px;
+    padding-top: 20px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @include breakpoint("xlarge+") {
     margin-left: -40px;
-    padding-top: 70px;
+    padding-top: 65px;
   }
 }
 
