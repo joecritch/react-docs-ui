@@ -36,6 +36,18 @@ body {
   font-family: 'proxima-nova', sans-serif;
 }
 
+code {
+  font-family: 'Monaco', monospace;
+  font-size: 80%;
+  opacity: 0.7;
+}
+
+pre,
+.CodeMirror pre {
+  font-family: 'Monaco', monospace !important;
+  font-size: 90% !important;
+}
+
 // This could be useful to avoid collapsing margins when stacking different fonts
 .block {
   display: flex;

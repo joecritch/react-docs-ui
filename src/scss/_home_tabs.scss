@@ -44,12 +44,23 @@
 
 .home_tabs__link {
   @include f-tab;
-  color: rgba(#1a1a1a, 0.3);
+  color: rgba(#1a1a1a, 0.46);
   transition: color 0.2s ease-out;
+  position: relative;
 
   &.is-current,
   &:hover {
     color: #1a1a1a;
+  }
+
+  &.is-current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    background: #61dafb;
   }
 }
 

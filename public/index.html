@@ -54,7 +54,7 @@
             <img src="/search.svg" alt="Search" height="16" />
           </label>
           <div class="header__search_input">
-            <input class="header__search_input_inner" type="search" placeholder="Search docs" />
+            <input id="search" class="header__search_input_inner" type="search" placeholder="Search docs" />
           </div>
         </form>
         <div class="header__aux">
@@ -157,7 +157,7 @@
     <section class="footer">
       <div class="wrapper">
         <div class="footer__inner">
-          <section class="footer__category">
+          <nav class="footer__category">
             <h2 class="footer__category_title">Docs</h2>
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__link">Quick Start</a></li>
@@ -165,8 +165,8 @@
               <li class="footer__item"><a href="#" class="footer__link">Tutorial</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Advanced Guides</a></li>
             </ul>
-          </section>
-          <section class="footer__category">
+          </nav>
+          <nav class="footer__category">
             <h2 class="footer__category_title">Community</h2>
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__link">Stack Overflow</a></li>
@@ -175,8 +175,8 @@
               <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Twitter</a></li>
             </ul>
-          </section>
-          <section class="footer__category">
+          </nav>
+          <nav class="footer__category">
             <h2 class="footer__category_title">Resources</h2>
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__link">Conferences</a></li>
@@ -184,8 +184,8 @@
               <li class="footer__item"><a href="#" class="footer__link">Examples</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Complementary Tools</a></li>
             </ul>
-          </section>
-          <section class="footer__category">
+          </nav>
+          <nav class="footer__category">
             <h2 class="footer__category_title">More</h2>
             <ul class="footer__list">
               <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
@@ -193,7 +193,7 @@
               <li class="footer__item"><a href="#" class="footer__link">React Native</a></li>
               <li class="footer__item"><a href="#" class="footer__link">Acknowledgements</a></li>
             </ul>
-          </section>
+          </nav>
           <section class="footer__logo">
             <a href="#">
               <img src="/oss_logo.png" alt="Facebook Open Source" />
@@ -264,6 +264,8 @@ ReactDOM.render(
     }
   });
   </script>
+
+  <script src="/tota11y.min.js"></script>
 
   <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
