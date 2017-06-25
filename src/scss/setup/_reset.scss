@@ -36,3 +36,9 @@ code {
   font-size: 80%;
   opacity: 0.5;
 }
+
+pre,
+.CodeMirror pre {
+  font-family: 'Monaco', monospace !important;
+  font-size: 90% !important;
+}

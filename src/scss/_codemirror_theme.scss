@@ -1,4 +1,4 @@
-.CodeMirror { height: auto!important; }
+.CodeMirror { height: auto!important; padding: 10px; }
 
 .cm-s-react.CodeMirror { background: #ffffff; color: #777777; }
 .cm-s-react div.CodeMirror-selected { background: #e0e0e0; }
@@ -7,7 +7,7 @@
 .cm-s-react .CodeMirror-gutters { background: #ffffff; border-right: 0px; }
 .cm-s-react .CodeMirror-guttermarker { color: #777777; }
 .cm-s-react .CodeMirror-guttermarker-subtle { color: #b0b0b0; }
-.cm-s-react .CodeMirror-linenumber { color: #b0b0b0; }
+.cm-s-react .CodeMirror-linenumber { color: #b0b0b0; margin-left: -10px; }
 .cm-s-react .CodeMirror-cursor { border-left: 1px solid #505050; }
 
 .cm-s-react span.cm-comment { color: #8f5536; }
