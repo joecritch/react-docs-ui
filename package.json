@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "sass": "node-sass src/scss/ -o public/dist/css/ --recursive --source-map true",
-    "watch:browser-sync": "browser-sync start --server --port 3000 --serveStatic \"public\" --files \"public\"",
+    "watch:browser-sync": "browser-sync start --no-ghost-mode --server --port 3000 --serveStatic \"public\" --files \"public\"",
     "watch:sass": "node-sass src/scss/ -o public/dist/css/ --watch --recursive --source-map true",
     "start": "npm-run-all sass --parallel watch:sass watch:browser-sync",
     "build": "npm-run-all sass"
