@@ -4,14 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "sass": "node-sass src/scss/ -o dist/css/ --recursive --source-map true",
-    "watch:sass": "node-sass src/scss/ -o dist/css/ --watch --recursive --source-map true",
-    "server": "http-server -p 8081",
-    "start": "npm-run-all server watch:sass",
+    "sass": "node-sass src/scss/ -o public/dist/css/ --recursive --source-map true",
+    "watch:browser-sync": "browser-sync start --serveStatic \"public\" --files \"public\"",
+    "watch:sass": "node-sass src/scss/ -o public/dist/css/ --watch --recursive --source-map true",
+    "start": "npm-run-all sass --parallel watch:sass watch:browser-sync",
     "build": "npm-run-all sass"
   },
   "devDependencies": {
-    "http-server": "^0.10.0",
     "node-sass": "^4.5.3"
   }
 }
