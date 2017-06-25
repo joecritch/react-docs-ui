@@ -44,6 +44,12 @@
   padding-top: 15px;
 }
 
+.footer__item {
+  & + & {
+    padding-top: 5px;
+  }
+}
+
 .footer__link {
   font-weight: 300;
 }

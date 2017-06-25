@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>⚛ React Docs UI</title>
   <link rel="stylesheet" href="/dist/css/main.css" />
+  <link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css" />
   <script>
   (function(d) {
     var config = {
@@ -118,7 +119,7 @@
         </div>
         <div class="home_example__main">
           <div class="home_example__editor">
-            <div class="editor"></div>
+            <div class="editor code"></div>
           </div>
           <div class="home_example__result">
             <div>Hello, John</div>
@@ -221,6 +222,48 @@
       </div>
     </div>
   </span>
+
+  <script src="https://codemirror.net/lib/codemirror.js"></script>
+  <script src="https://codemirror.net/mode/javascript/javascript.js"></script>
+  <script src="https://codemirror.net/mode/xml/xml.js"></script>
+  <script src="http://codemirror.net/mode/jsx/jsx.js"></script>
+
+  <script>
+  function ready(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+      fn();
+    } else {
+      document.addEventListener('DOMContentLoaded', fn);
+    }
+  }
+
+  const code = `class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+      	Hello, {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="John" />, mountNode
+);`;
+
+  ready(function() {
+    var editors = document.querySelectorAll('.code');
+    for (var i = 0; i < editors.length; i++) {
+      CodeMirror(editors[i], {
+        value: code,
+        mode: 'jsx',
+        lineNumbers: true,
+        readOnly: true,
+        theme: 'react',
+      });
+    }
+  });
+  </script>
 
   <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://localhost:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));
