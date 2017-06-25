@@ -1,10 +1,19 @@
 .home_example {
-  padding-top: 120px;
+  padding-top: 40px;
+
+  @include breakpoint("medium+") {
+    padding-top: 80px;
+  }
 
   @include breakpoint("xlarge+") {
     display: flex;
     margin-left: -40px;
+    padding-top: 120px;
   }
+}
+
+.home_example__title {
+  @include f-h2;
 }
 
 .home_example__text {
@@ -15,29 +24,52 @@
 }
 
 .home_example__body {
-  padding-top: 25px;
+  padding-top: 15px;
   padding-right: 40px;
   @include f-body;
+
+  @include breakpoint("xlarge+") {
+    padding-top: 25px;
+  }
 }
 
 .home_example__main {
+  @include breakpoint("medium+") {
+    display: flex;
+  }
+
+  @include breakpoint("large-") {
+    padding-top: 40px;
+  }
+
   @include breakpoint("xlarge+") {
     width: calc(2 / 3 * 100%);
     padding-left: 40px;
-    display: flex;
   }
 }
 
 .home_example__editor {
+  @include breakpoint("medium-to-large") {
+    width: calc(1 / 2 * 100);
+  }
+
   @include breakpoint("xlarge+") {
     flex: 1.61;
   }
 }
 
 .home_example__result {
+  padding-left: 40px;
+
+  @include breakpoint("large-") {
+    padding-top: 20px;
+  }
+
+  @include breakpoint("medium-to-large") {
+    width: calc(1 / 2 * 100);
+  }
+
   @include breakpoint("xlarge+") {
-    // width: calc(1 / 3 * 100%);
-    padding-left: 40px;
     flex: 1;
   }
 }

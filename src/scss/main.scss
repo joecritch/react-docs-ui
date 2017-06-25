@@ -45,4 +45,6 @@ body {
 // TODO -- standardize bottom padding across layouts?
 .home {
   padding-bottom: 120px;
+  position: relative;
+  z-index: 0;
 }
