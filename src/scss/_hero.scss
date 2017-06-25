@@ -13,6 +13,10 @@
   @include breakpoint("xlarge+") {
     padding-top: calc(60px + 95px);
     padding-bottom: 85px;
+    background-image: url('/large-logo.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 100px;
+    background-size: 50% auto;
   }
 }
 
