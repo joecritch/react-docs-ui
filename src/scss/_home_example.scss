@@ -35,7 +35,9 @@
 }
 
 .home_example__main {
-  padding-top: 20px;
+  @include breakpoint("small-") {
+    padding-top: 20px;
+  }
 
   @include breakpoint("medium+") {
     display: flex;
