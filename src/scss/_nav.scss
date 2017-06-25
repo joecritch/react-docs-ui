@@ -18,6 +18,7 @@
 .nav__link {
   @include f-nav;
   color: #fff;
+  transition: color 0.2s ease-out;
 
   @include breakpoint("xlarge+") {
     display: block;
