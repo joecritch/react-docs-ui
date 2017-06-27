@@ -14,6 +14,7 @@
 
 .home_example__title {
   @include f-h2;
+  color: $c-dark;
 }
 
 .home_example__text {
