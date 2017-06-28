@@ -1,22 +1,28 @@
 .hero {
   background-color: $c-dark;
   color: #fff;
-  padding-top: calc(40px + 45px);
   -webkit-font-smoothing: antialiased;
-  padding-bottom: 20px;
-
-  @include breakpoint("small+") {
-    padding-top: calc(60px + 50px);
-    padding-bottom: 70px;
-  }
 
   @include breakpoint("xlarge+") {
-    padding-top: calc(60px + 95px);
-    padding-bottom: 85px;
     background-image: url('/large-logo.svg');
     background-repeat: no-repeat;
     background-position: 100% 100px;
     background-size: 50% auto;
+  }
+}
+
+.hero__inner {
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+  @include breakpoint("small+") {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  @include breakpoint("xlarge+") {
+    padding-top: 95px;
+    padding-bottom: 85px;
   }
 }
 

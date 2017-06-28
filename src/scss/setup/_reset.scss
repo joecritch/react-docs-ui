@@ -10,7 +10,11 @@ body {
 * {
   margin: 0;
   padding: 0;
+}
+
+*, *::before, *::after {
   box-sizing: inherit;
+  border-color: inherit;
 }
 
 a {

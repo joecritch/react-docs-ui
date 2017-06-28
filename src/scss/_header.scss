@@ -31,8 +31,7 @@
 
 .header__logo,
 .header__nav,
-.header__search,
-.header__aux {
+.header__search {
   padding-left: 20px;
 
   @include breakpoint("xlarge+") {

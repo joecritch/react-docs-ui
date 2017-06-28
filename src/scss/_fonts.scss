@@ -30,7 +30,17 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
   }
 
   &::after {
-    margin-bottom: $b;
+    margin-top: $b;
+  }
+
+  &.underlined {
+    &::after {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-color: inherit;
+      margin-bottom: -1px;
+      position: relative;
+    }
   }
 }
 
@@ -81,7 +91,7 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 
   @include breakpoint("small-to-large") {
     @include font(24px, 30px, 100);
-    @include baseline(-  2px);
+    @include baseline(-2px);
   }
 
   @include breakpoint("xlarge+") {
@@ -207,4 +217,31 @@ $sans-serif--loaded: "proxima-nova", sans-serif;
 
 .f-note {
   @include f-note;
+}
+
+@mixin f-article_title {
+  @include font(60px, 65px, 700);
+  @include baseline(-1px);
+}
+
+.f-article_title {
+  @include f-article_title;
+}
+
+@mixin f-article_sub {
+  @include font(24px, 40px, 300);
+  @include baseline(-2px);
+}
+
+.f-article_sub {
+  @include f-article_sub;
+}
+
+@mixin f-small {
+  @include font(14px, 15px);
+  @include baseline(-2px);
+}
+
+.f-small {
+  @include f-small;
 }

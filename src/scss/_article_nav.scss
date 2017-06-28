@@ -1,0 +1,29 @@
+.article_nav {
+
+}
+
+.article_nav__category_title {
+  @include f-note;
+
+  & + & {
+    padding-top: 30px;
+  }
+}
+
+.article_nav__category_title:not(.is-current) {
+  a {
+    color: rgba(#fff, 0.5);
+    transition: color 0.2s ease;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.article_nav__list {
+  padding-top: 20px;
+
+  + .article_nav__category_title {
+    padding-top: 35px;
+  }
+}
