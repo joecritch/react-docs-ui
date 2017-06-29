@@ -51,7 +51,7 @@
 
 .article__body {
   padding-top: 65px;
-  padding-bottom: 90px;
+  padding-bottom: 120px;
   // padding-right: 40px;
 
   p {
@@ -71,6 +71,7 @@
 
 .article__editor {
   padding-top: 40px;
+  margin-left: -25px;
 
   + p {
     padding-top: 35px;
@@ -90,8 +91,16 @@
   background: $c-dark;
   color: #fff;
   border-color: rgba(#fff, 0.3);
-  padding-top: 35px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+
+  .alt-design & {
+    margin-right: -999em;
+    padding-right: 999em;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .article__nav {
@@ -104,6 +113,11 @@
   color: #fff;
   display: flex;
   align-items: stretch;
+
+  .alt-design & {
+    color: inherit;
+    background-color: transparent;
+  }
 }
 
 .article__nav_mid {

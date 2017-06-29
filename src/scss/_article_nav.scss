@@ -1,5 +1,5 @@
 .article_nav {
-
+  position: fixed;
 }
 
 .article_nav__category_title {
@@ -16,6 +16,14 @@
     transition: color 0.2s ease;
     &:hover {
       color: #fff;
+    }
+
+    .alt-design & {
+      color: rgba(#1a1a1a, 0.6);
+
+      &:hover {
+        color: #1a1a1a;
+      }
     }
   }
 }
