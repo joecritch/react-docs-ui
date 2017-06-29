@@ -96,7 +96,15 @@
 
           <div class="article__body article__inner">
             <p>The smallest React example looks like this:</p>
-            <div class="article__editor"><div class="editor code"></div></div>
+            <div class="article__editor">
+              <div class="editor code" data-readonly>
+                <pre>
+ReactDOM.render(
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;,
+  document.getElementById('root')
+);</pre>
+              </div>
+            </div>
             <p>It renders a header saying "Hello World" on the page.</p>
             <p>The next few sections will gradually introduce you to using React. We will examine the building blocks of React apps: elements and components. Once you master them, you can create complex apps from small reusable pieces.</p>
             <div class="article__note">
@@ -243,42 +251,7 @@
   <script src="https://codemirror.net/mode/xml/xml.js"></script>
   <script src="http://codemirror.net/mode/jsx/jsx.js"></script>
 
-  <script>
-  function ready(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-      fn();
-    } else {
-      document.addEventListener('DOMContentLoaded', fn);
-    }
-  }
-
-  const code = `class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-      	Hello, {this.props.name}
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <HelloMessage name="John" />, mountNode
-);`;
-
-  ready(function() {
-    var editors = document.querySelectorAll('.code');
-    for (var i = 0; i < editors.length; i++) {
-      CodeMirror(editors[i], {
-        value: code,
-        mode: 'jsx',
-        lineNumbers: true,
-        readOnly: true,
-        theme: 'react',
-      });
-    }
-  });
-  </script>
+  <script src="/main.js"></script>
 
   <script src="/tota11y.min.js"></script>
 

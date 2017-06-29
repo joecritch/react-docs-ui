@@ -56,11 +56,15 @@
 
 .home_example__editor {
   @include breakpoint("medium-to-large") {
-    width: calc(1 / 2 * 100);
+    width: calc(1 / 2 * 100%);
   }
 
   @include breakpoint("xlarge+") {
     flex: 1.61;
+  }
+
+  .alt-design & .cm-s-react.CodeMirror {
+    border-radius: 10px 0 0 10px;
   }
 }
 
@@ -69,12 +73,28 @@
   padding-left: 40px;
   padding-top: 20px;
 
+  border: 1px solid #f1f1f1;
+  border-radius: 0 10px 10px 0;
+
+  &::before {
+    @include f-note;
+    content: 'Result';
+    display: block;
+    background: #f1f1f1;
+    margin-top: -10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+    margin-left: -40px;
+    padding-left: 40px;
+  }
+
   @include breakpoint("medium+") {
     padding-top: 10px;
   }
 
   @include breakpoint("medium-to-large") {
-    width: calc(1 / 2 * 100);
+    width: calc(1 / 2 * 100%);
   }
 
   @include breakpoint("xlarge+") {
@@ -83,8 +103,8 @@
 }
 
 .editor {
-  background: #fff;
-  box-shadow: 0px 5px 20px 5px rgba(#000, 0.05);
+  // background: #fff;
+  // box-shadow: 0px 5px 20px 5px rgba(#000, 0.05);
   font-size: 14px;
   line-height: 20px;
 }

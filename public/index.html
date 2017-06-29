@@ -18,7 +18,7 @@
   })(document);
   </script>
 </head>
-<body>
+<body class="alt-design">
 
   <div class="site">
 
@@ -127,7 +127,22 @@
         </div>
         <div class="home_example__main">
           <div class="home_example__editor">
-            <div class="editor code"></div>
+            <div class="editor code">
+              <pre>
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+      	Hello, {this.props.name}
+      &lt;/div&gt;
+    );
+  }
+}
+
+ReactDOM.render(
+  &lt;HelloMessage name=&quot;John&quot; /&gt;, mountNode
+);</pre>
+            </div>
           </div>
           <div class="home_example__result">
             <div>Hello, John</div>
@@ -238,43 +253,7 @@
   <script src="https://codemirror.net/mode/xml/xml.js"></script>
   <script src="http://codemirror.net/mode/jsx/jsx.js"></script>
 
-  <script>
-  function ready(fn) {
-    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-      fn();
-    } else {
-      document.addEventListener('DOMContentLoaded', fn);
-    }
-  }
-
-  const code = `class HelloMessage extends React.Component {
-  render() {
-    return (
-      <div>
-      	Hello, {this.props.name}
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <HelloMessage name="John" />, mountNode
-);`;
-
-  ready(function() {
-    var editors = document.querySelectorAll('.code');
-    for (var i = 0; i < editors.length; i++) {
-      CodeMirror(editors[i], {
-        value: code,
-        mode: 'jsx',
-        lineNumbers: true,
-        readOnly: true,
-        theme: 'react',
-      });
-    }
-  });
-  </script>
-
+  <script src="/main.js"></script>
   <script src="/tota11y.min.js"></script>
 
   <script id="__bs_script__">//<![CDATA[
