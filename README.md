@@ -22,12 +22,19 @@ A new UI for the React docs site. This is just a static build, using a _very_ si
 
 ## TODO
 
-(Apart from the layouts themselves)
-
+- [ ] Subtle baseline fixes, nips and tucks
+- [ ] Add current links to GitHub and v15.5.4
+- [ ] Add a fast consistent transition to hovers
+- [ ] Responsive article layout
+- [ ] Sticky article side nav
+- [ ] Homepage tabs
+- [ ] Scroll-positioned current nav
+- [ ] Follow nav for tutorial page
+- [ ] Typography styles for tutorial
+- [ ] Test design for other article instances
 - [ ] Choose a free icon set / create icons from scratch
-- [ ] SVG sprite (once we know the final build target, e.g. Jekyll / Gatsby)
-- [ ] Better alignment techniques for icons (use 5px grid?)
-- [ ] Add autoprefixer
+- [ ] SVG sprite
+- [ ] Better alignment techniques for icons
 - [ ] Add stylelint and either stylefmt or prettier?
-- [ ] Better folder structure? 
-- [ ] Probably lots more I can't think of :)
+- [ ] Browser testing (+ autoprefixer)
+- [ ] Move over to Gatsby setup
