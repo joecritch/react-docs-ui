@@ -1,15 +1,22 @@
 .traverse_nav {
   display: flex;
   justify-content: space-between;
+  margin-left: -40px;
 }
 
 .traverse_nav__item {
   width: 50%;
   display: flex;
+  padding-left: 40px;
+
+  &:first-child {
+    // text-align: right;
+    // justify-content: flex-end;
+  }
 
   &:last-child {
-    text-align: right;
-    justify-content: flex-end;
+    // text-align: right;
+    // justify-content: flex-end;
   }
 
   a {

@@ -22,7 +22,7 @@
 
   <div class="site">
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="wrapper">
       <div class="header__inner">
         <div class="header__logo">
@@ -81,7 +81,7 @@
 
     <div class="wrapper">
 
-      <div class="article">
+      <div class="article" id="nav_bounds">
 
         <article class="article__main below_nav">
 
@@ -123,46 +123,33 @@ ReactDOM.render(
             <p>We also use some of the ES6 syntax in the examples. We try to use it sparingly because it's still relatively new, but we encourage you to get familiar with arrow functions, classes, template literals, let, and const statements. You can use Babel REPL to check what ES6 code compiles to.</p>
           </div>
 
-          <div class="article__traverse_nav">
-            <ul class="traverse_nav">
-              <li class="traverse_nav__item">
-                <a href="#">
-                  <div class="traverse_nav__label">Previous article</div>
-                  <div class="traverse_nav__title underlined">Introduction</div>
-                </a>
-              </li>
-              <li class="traverse_nav__item">
-                <a href="#">
-                  <div class="traverse_nav__label">Next article</div>
-                  <div class="traverse_nav__title underlined">Introducing JSX</div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
         </article>
 
         <nav class="article__nav">
-          <div class="article__nav_mid below_nav">
-            <div class="article__nav_inner article_nav">
-              <h2 class="article_nav__category_title is-current">Quick Start</h2>
-              <ul class="vert_nav article_nav__list">
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Installation</span></a></li>
-                <li class="vert_nav__item is-current"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Hello World</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Introducing JSX</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Rendering Elements</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Components and Props</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">State and Lifecycle</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Handling Events</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Conditional Rendering</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Lists and Keys</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Forms</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Lifting State Up</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Composition vs Inheritance</span></a></li>
-                <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Thinking in React</span></a></li>
-              </ul>
-              <h2 class="article_nav__category_title"><a href="#">Advanced Guides</a></h2>
-              <h2 class="article_nav__category_title"><a href="#">Reference</a></h2>
+          <div class="article__nav_mid below_nav" id="nav_outer">
+            <div class="article__nav_inner">
+              <div id="nav">
+                <div class="article_nav" id="nav_inner">
+                  <h2 class="article_nav__category_title is-current">Quick Start</h2>
+                  <ul class="vert_nav article_nav__list">
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Installation</span></a></li>
+                    <li class="vert_nav__item is-current"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Hello World</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Introducing JSX</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Rendering Elements</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Components and Props</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">State and Lifecycle</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Handling Events</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Conditional Rendering</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Lists and Keys</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Forms</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Lifting State Up</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Composition vs Inheritance</span></a></li>
+                    <li class="vert_nav__item"><a href="#" class="vert_nav__link"><span class="vert_nav__text">Thinking in React</span></a></li>
+                  </ul>
+                  <h2 class="article_nav__category_title"><a href="#">Advanced Guides</a></h2>
+                  <h2 class="article_nav__category_title"><a href="#">Reference</a></h2>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
@@ -170,6 +157,16 @@ ReactDOM.render(
 
       </div>
 
+      <div class="article__traverse_nav">
+        <ul class="traverse_nav">
+          <li class="traverse_nav__item">
+            <a href="#">
+              <div class="traverse_nav__label">Continue reading</div>
+              <div class="traverse_nav__title underlined">Introducing JSX</div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </main>
@@ -251,6 +248,11 @@ ReactDOM.render(
   <script src="https://codemirror.net/mode/xml/xml.js"></script>
   <script src="http://codemirror.net/mode/jsx/jsx.js"></script>
 
+
+  <script src="/debounce.js"></script>
+  <script src="/ready.js"></script>
+  <script src="/raf.js"></script>
+  <script src="/stickyNav.js"></script>
   <script src="/main.js"></script>
 
   <script src="/tota11y.min.js"></script>
